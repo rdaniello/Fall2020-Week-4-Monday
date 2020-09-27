@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Form </title>
+    <style>
+        table {
+            border-collapse:separate;
+            border:solid black 1px;
+            border-radius:6px;
+            -moz-border-radius:6px;
+            width:60%;
+            margin-left:20%;
+            background-color: white;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+      </style>
 </head>
-<body>
+<body style='background-color:rgb(240, 235, 248);'>
 <h3>
     Form Design Exercise:
 </h3>
@@ -16,5 +29,210 @@
     Try to replecate the format of the form in the page.<br>
     Make use of "Label", "Input" and "Table".
 </p>
+<form id='form1'>
+    <table border="0" >
+        <thead bgcolor='#673ab7'>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <h1>Individual Project</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Choose a topic, and research interest for the individual visualization project.</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style='color: red;'>* Required</label>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table border="0" >
+        <tr>
+            <td>
+                <label for="email">Email address</label>
+                <label style='color: red;'>*</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="email" id="email" name="email" required>
+            </td>
+        </tr>
+    </table>
+    <table border="0" >
+        <tr>
+            <td>
+                <label for="fname">Firstname</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="fname" name="fname">
+            </td>
+        </tr>
+    </table>
+    <table border="0" >
+        <tr>
+            <td>
+                <label for="lname">Lastname</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="lname" name="lname">
+            </td>
+        </tr>
+    </table>
+    <table border="0" >
+        <tr>
+            <td>
+                <label for="interest">Research Interest (list at least 3)</label>
+                <label style='color: red;'>*</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id='interest' name='interest' rows='3' ></textarea>
+            </td>
+        </tr>
+    </table>
+    <table border="0" >
+        <tr>
+            <td>
+                <label for="title">Project Title - (e.g. income vs education US Census)</label>
+                <label style='color: red;'>*</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="title" name="title">
+            </td>
+        </tr>
+    </table>
+    <table border="0" >
+        <tr>
+            <td>
+                <label for="title">Top Skills</label>
+                <label style='color: red;'>*</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="sql" name="sql" value="sql">
+                <label for="sql">SQL</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="python" name="python" value="python">
+                <label for="python">d3js programming</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="matlab" name="matlab" value="matlab">
+                <label for="matlab">Matlab</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="d3js" name="d3js" value="d3js">
+                <label for="d3js">D3js and Javascript</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="CVB" name="CVB" value="CVB">
+                <label for="CVB">C# VB.net</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="php" name="php" value="php">
+                <label for="php">PHP</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="nodejs" name="nodejs" value="nodejs">
+                <label for="nodejs">Node.js</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="web" name="web" value="web">
+                <label for="web">Web design tools (e.g. Wordpress)</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="html" name="html" value="html">
+                <label for="html">HTML and CSS</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="excel" name="excel" value="excel">
+                <label for="excel">Excel</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="pbi" name="pbi" value="pbi">
+                <label for="pbi">PowerBI</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="tab" name="tab" value="tab">
+                <label for="tab">Tableau</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="opt13" name="opt13" value="opt13">
+                <label for="opt13">Option 13</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="oth" name="oth" value="oth">
+                <label for="oth">Other: </label>
+                <input type="text" id="othtxt" name="othtxt">
+            </td>
+        </tr>
+    </table>
+    <table border="0" >
+        <tr>
+            <td>
+                <label for="sugg">Suggestions or Questions</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="sugg" name="sugg">
+            </td>
+        </tr>
+    </table>
+    <table border="0" >
+        <tr>
+            <td>
+                <input type="checkbox" id="send" name="send" value="send">
+                <label for="oth">Send me a copy of my responses.</label>
+            </td>
+        </tr>
+    </table>
+    <button type="submit" form='form1' value='submit'>Submit</button>
+</form>
 </body>
 </html>
