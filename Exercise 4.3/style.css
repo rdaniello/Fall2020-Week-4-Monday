@@ -1,8 +1,54 @@
-/* CSS reset */
-
-
 /* Global styles */
-/* Background, color, font-family */
-/* Layout */
+body{
+    background-color: gainsboro;
+    width: 90vw;
+}
+div{
+    margin:auto;
+    width: 80vw;
+}
 /* For .special-content */
+.special-content{
+    color: mediumslateblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pro_individual{
+    color:mediumblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pro_group{
+    color: darkslategray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /* Navigation bar */
+ul{
+    list-style-type: none;
+    margin:auto;
+    padding: 0;
+    width: 80vw;
+    overflow: hidden;
+    background-color: chocolate;
+    alignment:center;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: darkgoldenrod;
+}
+.navBtn{
+    background-color:#673ab7;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius:4px;
+    -moz-border-radius:4px;
+}

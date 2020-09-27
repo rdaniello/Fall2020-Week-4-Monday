@@ -31,3 +31,11 @@ div
     margin: auto;
     width: 80vw;
 }
+.navBtn{
+    background-color:#673ab7;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius:10px;
+    -moz-border-radius:10px;
+}
